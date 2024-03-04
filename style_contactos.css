@@ -1,0 +1,97 @@
+#contactosInfo {
+    display: none;
+    text-align: center;
+}
+
+#contactosInfo.visible {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#contactosContainer {
+    background-color: #fff; /* Cambia el fondo a blanco */
+    padding: 20px;
+    position: relative;
+    top: -200px; /* Sube 50px desde la posición original */
+}
+
+#contactosContainer h1 {
+    text-align: center; /* Centra el texto */
+    font-family: 'Times New Roman', serif; /* Aplica la fuente Times New Roman */
+}
+
+#regresarBtn {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    left: 10px; /* Ajusta la posición desde la izquierda */
+    top: 10px; /* Ajusta la posición desde arriba */
+    background-color: #3498db;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+
+
+
+#contactosTitle {
+    font-family: 'Times New Roman', serif; /* Estilo de fuente en Times New Roman */
+    font-size: 24px; /* Tamaño de fuente del título */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+.contacto-container {
+    background-color: #fff; /* Fondo blanco para cada contacto */
+}
+
+.contacto {
+    background-color: #fff; /* Fondo blanco para el contenido del contacto */
+}
+
+
+.title-container {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h1 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.contactos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contacto-container {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    border: 3px dashed #3498db;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.contacto strong {
+    display: block;
+    margin-bottom: 5px;
+}

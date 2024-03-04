@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafos: Análisis de Algoritmos MAT-361</title>
+    <link rel="stylesheet" href="style_inicio.css">
+</head>
+<body>
+
+    <header>
+        <div class="title-container">
+            <h1>Pagina de instrucciones y ayuda</h1>
+        </div>
+    </header>
+<br>
+        <!-- Botón de regresar -->
+        <button id="regresarBtn" onclick="regresarAIndex()">Pagina de inicio</button>
+
+        <script>
+            function regresarAIndex() {
+                window.location.href = 'index6.html';
+            }
+        </script>
+
+    <p>
+       Si tienes dudas de como funciona la página aquí te lo explicamos.<br>
+       En la página principal podrás visualizar dos botones uno te lleva a la sección de contactos donde verás la información relevante para contactarte con nosotras,
+       y el siguiente boton que lograrás visualizar es el de <strong><em>Dibujar Grafo</em></strong>, en este apartado
+       lo primero que visualizarás es que a tu derecha cuentas con una serie de botones y en el medio de tu pantalla un lienzo, que es donde ocurrirá la magia.<br>
+
+       <ol>Cuando presiones el boton de <strong>Crear Nodo</strong> y posteriormente presiones el lienzo se creará un nodo en la posición que vos quieras
+        debes repetir este proceso hasta que crees los nodos con los que estés cómodo.</ol>
+       <ol>Posterior a esto se cuenta con el boton de <strong>Renombrar Nodo</strong> que como su nombre lo dice te permite cambiarle el nombre y el identificacdor al nodo, esto servirá mas adelante 
+        por si quieres elimnar un nodo deberás colocar ese identificacdor.</ol>
+       <ol>Para conectar los nodos se tiene el boton de <strong>Conectar nodos</strong> donde te pedirá que ingreses el nodo inicio y el nodo final para conectarlos, así como te preguntará si se trata de un grafo dirigido o no dirigido
+        para seleccionar la opción de grafo dirigido únicamente tienes que presionar en aceptar, para seleccionar la opcion de grafo no dirigido debes darle a cancelar</ol> 
+       <ol>Posterior a eso verás el nodo <strong>Eliminar nodo</strong> que como te explicamos previamente necesitarás el identificador del nodo para eliminarlo, en caso de que no hayas renombrado ni un solo nodo
+        el identificador del mismo será el nombre con el que lo visualizas en el lienzo</ol>
+       <ol>Si te equivocaste al hacer tus conexiones en general tenemos el boton de <strong> Limpiar lienzo</strong> que al presionar limpia todo el rectangulo donde estabas trabajando
+        Pero si no quieres perder tu proceso antes te recomendamos que hagas uso del boton <strong>Guardar Grafo</strong> el cual te servirá para guardar tu grafo como una imagen jpg y te lo almacenará en el Storage del navegador
+        donde lo podrás seguir editando posteriormente.</ol>
+       <ol>Si por error después de guardar tu grafo presionaste el boton de limpiar el lienzo, contamos con el botón de <strong>Cargar Grafo</strong> el cual se encargará de volver  colocar en el lienzo el grafo que borraste.</ol>
+
+    </p>
+
+
+
+</body>
+</html>

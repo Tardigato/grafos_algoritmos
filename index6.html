@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafos: Análisis de Algoritmos MAT-361</title>
+    <link rel="stylesheet" href="style_inicio.css">
+    <link rel="stylesheet" href="style_contactos.css">
+</head>
+<body>
+
+    <header>
+        <div class="title-container">
+            <h1>Grafos: Análisis de Algoritmos MAT-361</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Botones en el área principal -->
+        <div class="button-container">
+            <button id="dibujarGrafoBtn" class="custom-btn">Dibujar Grafo</button>
+            <button id="ayuda" class="custom-btn">Ayuda</button>
+            <!-- Otros botones pueden ir aquí según sea necesario -->
+        </div>
+    </main>
+
+    <!-- Resto del contenido de la página principal -->
+
+    <footer>
+        <!-- Botón de contactos -->
+        <button class="contactosBtn" id="mostrarModalBtn">Contactos</button>
+        <p>&copy; 2024 </p>
+    </footer>
+
+    <!-- Modal de contactos -->
+    <div id="modalContactos" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="cerrarModalBtn">&times;</span>
+            <div id="contactosContainer" style="display: none;">
+                <!-- Contenido de contactos aquí -->
+                <h1 id="contactosTitle">Contactos</h1>
+                <!-- Tres contactos aquí -->
+                <div class="contacto-container">
+                    <!-- Primer contacto -->
+                    <div class="contacto">
+                        <strong>Nombre:</strong> Andrea Fernández Laffertt<br>
+                        <strong>Correo:</strong> andrea.fernandez.l@ucb.edu.bo<br>
+                        <strong>Nro. celular:</strong> 702045492
+                    </div>
+                </div>
+                <div class="contacto-container">
+                    <!-- Segundo contacto -->
+                    <div class="contacto">
+                        <strong>Nombre:</strong> Ayana Siegle Clavijo<br>
+                        <strong>Correo:</strong> ayana.siegle@ucb.edu.bo<br>
+                        <strong>Nro. celular:</strong> 62273515
+                    </div>
+                </div>
+                <div class="contacto-container">
+                    <!-- Tercer contacto -->
+                    <div class="contacto">
+                        <strong>Nombre:</strong> Gabriela Barrios Michel<br>
+                    <strong>Correo:</strong> gabriela.barrios@ucb.edu.bo<br>
+                    <strong>Nro. celular:</strong> 60698796
+                    </div>
+                </div>
+                <!-- Botón de regresar -->
+                <button id="regresarBtn" style="display: none;">Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_inicio.js"></script>
+
+    <script>
+        // Código adicional para redirigir al hacer clic en el botón "Dibujar Grafo"
+        document.getElementById('dibujarGrafoBtn').addEventListener('click', function() {
+            window.location.href = 'file3.html';
+        });
+        document.getElementById('ayuda').addEventListener('click', function() {
+            window.location.href = 'paginahelp.html';
+        });
+    </script>
+
+</body>
+</html>

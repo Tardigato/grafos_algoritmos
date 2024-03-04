@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grafos - Análisis de Algoritmos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <!-- Include either the minified or the module version of jspdf, not both -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.min.js"></script>
+    <!-- OR -->
+    <!-- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.esm.min.mjs"></script> -->
+
+    <button id="regresarBtn" onclick="regresarAIndex()">Página de Inicio</button>
+
+    <script>
+        function regresarAIndex() {
+            window.location.href = 'index6.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="graph-container">
+            <div class="overlay-container">
+                <div id="lienzo"></div>
+                <div id="infoNodos"></div>
+            </div>
+
+            <div class="button-container">
+                <button id="crearNodoButton">Crear Nodo</button>
+                <button onclick="renameNodeButton()">Renombrar Nodo</button>
+                <button onclick="connectNodesButton()">Conectar Nodos</button>
+                <button onclick="deleteNodeButton()">Eliminar Nodo</button>
+                <button onclick="limpiarLienzo()">Limpiar Lienzo</button>
+                <button onclick="guardarGrafo()">Guardar Grafo</button>
+                <button onclick="cargarGrafo()">Cargar Grafo</button>
+                <button onclick="generarMatrizButton()">Generar Matriz</button>
+            </div>
+        </div>
+
+        <div class="matrix-container">
+            <h2>Matriz de Adyacencia</h2>
+            <div id="matrizContainer" class="matriz-container">
+                <p id="matrizContent"></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
